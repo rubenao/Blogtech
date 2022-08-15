@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid black;
    
    
     
@@ -238,7 +239,7 @@ i {
 
 /* ------ MEDIA QUERIES ------- */
 
-@media (min-width: 375px) and (max-width: 577px) {
+@media (min-width: 360px) and (max-width: 577px) {
     .nav-logo {
         width: 70% !important;
     }
@@ -330,7 +331,7 @@ i {
 
     .footer {
         padding: 1.5rem 2.3rem;
-        height: 75vh;
+        height: 570px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -403,14 +404,14 @@ i {
 
     .footer {
         padding: 1.5rem 2.3rem;
-        height: 75vh;
+        height: 570px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
 
     .footer-logo {
-        width: 50%;
+        width: 25%;
         height: auto;
     }
     .section1 {
