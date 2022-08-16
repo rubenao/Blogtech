@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*border: 1px solid black; */
-    scroll-behavior: smooth;
+    border: 1px solid black;
+   
+   
+    
 }
 :root {
     --azul-oscuro : #152536;
