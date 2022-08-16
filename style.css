@@ -2,10 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
-   
-   
-    
+    /*border: 1px solid black;*/
+    scroll-behavior: smooth;
 }
 :root {
     --azul-oscuro : #152536;
@@ -727,7 +725,7 @@ i {
     }
     .img-meta {
         border-radius: 50%;
-        width: 15%;
+        width: 17%;
     }
 
     .link-author {
@@ -934,12 +932,15 @@ i {
         width: 12%;
     }
 
-
-
-
-
+    .meta-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-left: 0.5em;
+        width: 55%;
+        
+    }
     /*--------- END ARTICLE CSS----- */
-
 }
 
 
