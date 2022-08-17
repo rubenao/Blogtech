@@ -7,11 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="prueba-css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
 
-    <div class="container active">
+    <!-- <div class="container active">
         <img src="/1.Assets/pexels-ivan-babydov-7788368.jpg" alt="" class="img-container">
         <div class="container-content">
             <h1>Product Card</h1>
@@ -36,10 +36,67 @@
         </div>
         
 
-    </div>
+    </div> -->
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="/1.Assets/pexels-eugene-capon-1261820.jpg" alt="">
+                    <h2><a href="/que-es-bim-y-como-ha-revolucionado-la-industria.html">Slide1</a></h2>
+                </div>
+              <div class="swiper-slide">
+                <img src="/1.Assets/pexels-darrel-und-1087180.jpg" alt="">
+                <h2>Slide1</h2>
+            </div>
+              <div class="swiper-slide">
+                <img src="/1.Assets/pexels-darrel-und-1087180.jpg" alt="">
+                <h2>Slide1</h2>
+            </div>
+            <div class="swiper-slide">
+                <img src="/1.Assets/pexels-darrel-und-1087180.jpg" alt="">
+                <h2>Slide1</h2>
+            </div>
+            </div>
+            <!-- If we need pagination -->
+          
+            <div class="swiper-pagination"></div> 
+            <!-- If we need navigation buttons 
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+          
+        </div>
+
+   
 
 
     <script src="/script.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
+            var swiper = new Swiper('.swiper', {
+            spaceBetween: 0,
+            speed: 500,
+            centeredSlides: true,
+            loop: true,
+            slideToClickedSlide: true,
+            autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+            });
+
+      
+    </script>
     
 </body>
 </html>
