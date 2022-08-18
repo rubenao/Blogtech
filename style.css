@@ -36,6 +36,8 @@ body {
     font-weight: 700 !important;
 }
 
+/*-----------CAROUSEL STYLES----------------*/
+
 /*.carousel-inner , .carousel-indicators {
     height: 80vh !important;
     width: 100% !important;
@@ -50,6 +52,83 @@ body {
     width: 100% !important;
 
 } */
+
+.swiper {
+    width: 90%;
+    height: 800px;
+    padding: 3rem 0 !important;
+  }
+
+  .img-swiper {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+    object-fit: cover;
+    /*opacity: 90%;*/
+
+  }
+
+  .img-bg-inner{
+    position: relative;
+    z-index: 3;
+    top: -200px;
+    left: 50px;
+    width: 90%;
+
+  }
+
+  .img-bg-inner::before{
+    content: "";
+    position: absolute;
+    z-index: -2;
+    top: -400px;
+    left: -50px;
+    width: 111%;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.167);
+    border-radius: 20px;
+    /*color: black;*/
+
+} 
+.a-swiper {
+    text-decoration: none;
+    color: white !important;
+  }
+
+  .swiper-button-next , .swiper-button-prev, .swiper-pagination, h2, p {
+    color: white !important;
+  }
+
+  .swiper-pagination {
+    padding-bottom: 10rem !important;
+    
+  }
+
+  .swiper-pagination-bullet{
+    background-color: white !important;
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  .swiper-button-next:after , .swiper-button-prev:after {
+    margin-top: -140px;
+    font-size: 48px !important;
+  }
+
+  .h2-swipper {
+    font-size: 2.2rem;
+    margin-bottom: 1rem ;
+    font-weight: 700;
+  }
+  .p-swiper {
+    padding-bottom: 3rem;
+    font-size: 1.1rem;
+  }
+
+
+/*-----------END CAROUSEL STYLES----------------*/
 
 
 #car {
@@ -81,7 +160,7 @@ body {
 .h2-articles, .h1-article{
     font-size: 3rem;
     font-weight: 900 !important;
-    color: var(--azul-oscuro);
+    color: var(--azul-oscuro) !important;
     
 }
 /*img {
@@ -129,7 +208,7 @@ body {
 
 .h2-tarjeta {
     font-weight: 700;
-    color: black;
+    color: black !important;
     font-size: 1.5rem;
     padding-top: 0.3em;
    
@@ -138,8 +217,7 @@ body {
 .p-tarjeta {
     font-weight: 400 !important;
     font-size: 1rem;
-    
-    color: black;
+    color: black !important;
 }
 
 .boton-container {
@@ -386,6 +464,70 @@ i {
         font-size: 1.9rem;
         
     }
+
+    /*------CAROUSEL CSS---------*/
+
+    .swiper {
+        width: 90%;
+        height: 300px;
+        padding: 3rem 0 !important;
+      }
+
+      .img-swiper {
+        width: 100%;
+        height: 250px;
+        position: relative;
+        z-index: 1;
+        border-radius: 20px;
+    
+      }
+
+      .p-swiper {
+        display: none;
+      }
+      .swiper-pagination {
+        padding-bottom: 0.1rem !important;
+      }
+
+      
+    .img-bg-inner{
+        position: relative;
+        z-index: 1;
+        top: -95px;
+        left: 30px;
+        width: 90%;
+
+    }
+    .img-bg-inner::before{
+        content: "";
+        position: absolute;
+        z-index: -2;
+        top: -155px;
+        left: -30px;
+        width: 111%;
+        height: 250px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        /*color: black;*/
+    
+    }
+    .h2-swipper {
+      font-size: 1.12rem;
+      font-weight: 700;
+    }
+
+    .swiper-button-next:after , .swiper-button-prev:after {
+      margin-top: 40px;
+      font-size: 24px !important;
+    }
+
+    .swiper-pagination-bullet{
+      background-color: white !important;
+      width: 8px !important;
+      height: 8px !important;
+    }
+
+    /*------END CAROUSEL CSS-----*/
     .a-table-content {
         text-decoration: none;
         color: var(--azul-oscuro);
@@ -562,6 +704,9 @@ i {
     }
 
     /*------ END ARTICLE CSS ------*/
+
+  
+
 }
 
 @media (min-width: 577px) and (max-width:768px) {
@@ -580,6 +725,72 @@ i {
     .h1-article{
         text-align: left;
     }
+
+    /*------CAROUSEL CSS---------*/
+
+    .swiper {
+        width: 90%;
+        height: 400px;
+        padding: 3rem 0 !important;
+      }
+  
+    .img-swiper {
+        width: 100%;
+        height: 350px;
+        position: relative;
+        z-index: 1;
+        border-radius: 20px;
+    
+    }
+  
+    .p-swiper {
+        display: none;
+    }
+    
+    .swiper-pagination {
+        padding-bottom: 0.1rem !important;
+      }
+  
+      
+    .img-bg-inner{
+        position: relative;
+        z-index: 1;
+        top: -100px;
+        left: 30px;
+        width: 90%;
+  
+    }
+    .img-bg-inner::before{
+        content: "";
+        position: absolute;
+        z-index: -2;
+        top: -250px;
+        left: -30px;
+        width: 111%;
+        height: 350px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        /*color: black;*/
+    
+    } 
+    .h2-swipper {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+  
+    .swiper-button-next:after , .swiper-button-prev:after {
+        margin-top: 40px;
+        font-size: 36px !important;
+    }
+
+    .swiper-pagination-bullet{
+        background-color: white !important;
+        width: 10px !important;
+        height: 10px !important;
+      }
+
+
+    /*------END CAROUSEL CSS---------*/
     
     .tarjeta {
         /*width: 28%;*/
@@ -778,6 +989,60 @@ i {
     .h1-article{
         text-align: left;
     }
+
+
+    /*----- CAROUSEL CSS-------*/
+
+    .swiper {
+        width: 90%;
+        height: 600px;
+        padding: 3rem 0 !important;
+      }
+  
+    .img-swiper {
+        width: 100%;
+        height: 450px;
+        position: relative;
+        z-index: 1;
+        border-radius: 20px;
+        /*opacity: 90%;*/
+    
+      }
+  
+    .img-bg-inner::before{
+        content: "";
+        position: absolute;
+        z-index: -2;
+        top: -250px;
+        left: -50px;
+        width: 111%;
+        height: 450px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        /*color: black;*/
+    
+    } 
+  
+    .swiper-pagination {
+      padding-bottom: 7rem !important;
+    }
+  
+    .h2-swipper {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  
+    .swiper-button-next:after , .swiper-button-prev:after {
+      margin-top: -50px;
+      font-size: 42px !important;
+    }
+
+    p.swiper {
+        font-size: 1rem !important;
+    }
+
+
+    /*------END CAROUSEL CSS-----*/
     
     .tarjeta {
         /*width: 28%;*/

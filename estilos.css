@@ -6,8 +6,8 @@
 }
 
 .swiper {
-    width: 800px;
-    height: 600px;
+    width: 90%;
+    height: 800px;
     padding: 3rem 0 !important;
   }
 
@@ -21,12 +21,13 @@
     top: 10px;
   } */
 
-  img {
+  .img-swiper {
     width: 100%;
-    height: 495px;
+    height: 600px;
     position: relative;
     z-index: 1;
     border-radius: 20px;
+    object-fit: cover;
     /*opacity: 90%;*/
 
   }
@@ -34,7 +35,7 @@
   .img-bg-inner{
     position: relative;
     z-index: 3;
-    top: -180px;
+    top: -200px;
     left: 50px;
     width: 90%;
 
@@ -44,10 +45,10 @@
     content: "";
     position: absolute;
     z-index: -2;
-    top: -320px;
+    top: -405px;
     left: -50px;
     width: 111%;
-    height: 495px;
+    height: 600px;
     background-color: rgba(0, 0, 0, 0.167);
     border-radius: 20px;
     /*color: black;*/
@@ -62,14 +63,31 @@ a {
   }
 
   .swiper-pagination {
-    padding-bottom: 4rem !important;
+    padding-bottom: 10rem !important;
+    
   }
 
   .swiper-pagination-bullet{
     background-color: white !important;
+    width: 12px !important;
+    height: 12px !important;
   }
 
-@media (min-width:375px) and (max-width:490px){
+  .swiper-button-next:after , .swiper-button-prev:after {
+    margin-top: -140px;
+    font-size: 48px !important;
+  }
+
+  .h2-swipper {
+    font-size: 2.3rem;
+    margin-bottom: 1rem ;
+  }
+  .p-swiper {
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
+  }
+
+@media (min-width:375px) and (max-width:576px){
 
     .swiper {
         width: 90%;
@@ -77,7 +95,7 @@ a {
         padding: 3rem 0 !important;
       }
 
-      img {
+      .img-swiper {
         width: 100%;
         height: 250px;
         position: relative;
@@ -86,7 +104,7 @@ a {
     
       }
 
-      p {
+      .p-swiper {
         display: none;
       }
       .swiper-pagination {
@@ -110,11 +128,131 @@ a {
         left: -30px;
         width: 111%;
         height: 250px;
-        background-color: rgba(0, 0, 0, 0.167);
+        background-color: rgba(0, 0, 0, 0.3);
         border-radius: 20px;
         /*color: black;*/
     
-    } 
+    }
+    .h2-swipper {
+      font-size: 1.12rem;
+    }
+
+    .swiper-button-next:after , .swiper-button-prev:after {
+      margin-top: 40px;
+      font-size: 24px !important;
+    }
+
+    .swiper-pagination-bullet{
+      background-color: white !important;
+      width: 10px !important;
+      height: 10px !important;
+    }
 
   }
+
+  @media (min-width: 577px) and (max-width:768px) {
+
+    .swiper {
+      width: 90%;
+      height: 400px;
+      padding: 3rem 0 !important;
+    }
+
+    .img-swiper {
+      width: 100%;
+      height: 350px;
+      position: relative;
+      z-index: 1;
+      border-radius: 20px;
+  
+    }
+
+    .p-swiper {
+      display: none;
+    }
+    .swiper-pagination {
+      padding-bottom: 0.1rem !important;
+    }
+
+    
+    .img-bg-inner{
+      position: relative;
+      z-index: 1;
+      top: -100px;
+      left: 30px;
+      width: 90%;
+
+  }
+    .img-bg-inner::before{
+      content: "";
+      position: absolute;
+      z-index: -2;
+      top: -255px;
+      left: -30px;
+      width: 111%;
+      height: 350px;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      /*color: black;*/
+  
+    } 
+    .h2-swipper {
+      font-size: 1.2rem;
+    }
+
+    .swiper-button-next:after , .swiper-button-prev:after {
+      margin-top: 40px;
+      font-size: 36px !important;
+    }
+
+
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+
+  .swiper {
+      width: 90%;
+      height: 600px;
+      padding: 3rem 0 !important;
+    }
+
+  .img-swiper {
+      width: 100%;
+      height: 450px;
+      position: relative;
+      z-index: 1;
+      border-radius: 20px;
+      /*opacity: 90%;*/
+  
+    }
+
+  .img-bg-inner::before{
+      content: "";
+      position: absolute;
+      z-index: -2;
+      top: -255px;
+      left: -50px;
+      width: 111%;
+      height: 450px;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      /*color: black;*/
+  
+  } 
+
+  .swiper-pagination {
+    padding-bottom: 7rem !important;
+  }
+
+  .h2-swipper {
+    font-size: 1.5rem;
+  }
+
+  .swiper-button-next:after , .swiper-button-prev:after {
+    margin-top: -50px;
+    font-size: 42px !important;
+  }
+
+
+}
 
