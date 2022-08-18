@@ -364,7 +364,7 @@ i {
 
 .table-list a{
     text-decoration: none;
-    color: black;
+    color: black !important;
 }
 
 .fa-solid {
@@ -400,7 +400,7 @@ i {
 
 }
 .h2-table-content {
-    color: black;
+    color: black !important;
     font-weight: 900;
     font-size: 1.55rem;
     margin: 0;
@@ -446,6 +446,7 @@ i {
 
 .p-body-article {
     font-size: 1.2rem;
+    color: black !important;
 }
 
 /*-------- END ARTICLE STYLES ---------*/
@@ -643,7 +644,7 @@ i {
 
     .a-table-content {
         width: 90%;
-        color: black;
+        color: black !important;
         text-decoration: none;
         display: flex;
         justify-content: space-between;
