@@ -449,6 +449,17 @@ i {
     color: black !important;
 }
 
+.social-icon-share i {
+    color: black;
+    font-size: 28px;
+    
+}
+
+.social-icon-share h2 {
+    font-weight: 600;
+    color: black !important;
+}
+
 /*-------- END ARTICLE STYLES ---------*/
 
 .scroll-top {
